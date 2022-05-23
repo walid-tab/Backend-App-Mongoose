@@ -1,14 +1,14 @@
 const mongoose=require('mongoose')
-// require('dotenv').config();
+require('dotenv').config();
 
 const connectDB= async()=>{
     
     try {
-       await mongoose.connect("mongodb://127.0.0.1:27017/listContact")
+       await mongoose.connect(process.env.MONGO_URI)
         console.log('db is connected')
         
     } catch (error) {
-        console.log('db is not connected')
+        console.log({'db is not connected':error})
          
     }
         
