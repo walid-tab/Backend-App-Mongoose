@@ -14,7 +14,7 @@ function ContactCard({contact}) {
     <Card.Text>{contact.email}</Card.Text>
     <Card.Text>{contact.age}</Card.Text>
     <Button variant="primary">edit</Button>
-    <Button variant="danger" onClick={()=>dispatch(deleteContact(contact._id))}>delete</Button>
+    <Button  style={{ marginLeft: '130px' }}variant="danger" onClick={()=>dispatch(deleteContact(contact._id))}>delete</Button>
   </Card.Body>
 </Card>
     </div>

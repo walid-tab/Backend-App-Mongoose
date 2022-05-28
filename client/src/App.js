@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation";
 import UpdateContact from "./components/UpdateContact";
 import {useDispatch} from 'react-redux'
 import { getContacts } from "./JS/actions/userAction";
+import '../src/loader/loader.css'
 
 function App() {
   const dispatch=useDispatch()

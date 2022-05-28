@@ -15,7 +15,7 @@ export const addContact = (newUser,navigate)=> async(dispatch)=>{
         const res=await axios.post("/api/addUser",newUser)
         navigate("/")
         dispatch(getContacts())
-        } catch (error) {
+        } catch (error) { 
         
     }
 }
